@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@gris:#292929;
+@rose:#e50242;
+@elite:'Special Elite', cursive;
+@mont:'Montserrat', sans-serif;
+
+/****** commun style ******/
+
+.db {
+    display: block;
+}
+
+.typo (@ff, @fs, @c) {
+    font-family: @ff;
+    font-size: @fs;
+    color: @c;
+}
+.padding {
+    padding-top: 90px;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+/****** header ******/
+
+header {
+    background-color: @gris;
+    position: fixed;
+    z-index: 900;
+    #logo {
+    font-family: @elite;
+    font-size: 36px;
+    color: white;
+        span {
+        color: @rose;
+        }
+    } 
+    #drapeaux {
+    margin-left: auto;
+    line-height: 0;
+        a {
+        padding: 5px 5px 0 5px;  
+        }
+    }
+}
+
+#menu {
+    background-color: @gris !important;
+    margin-left: auto;
+    padding: 0;
+        .blanc {
+        color: white;}
+        a {font-family: @mont;
+        font-size: 13px;
+    }
+}
+/***** reseaux sociaux ******/
+
+#icon {
+    position: fixed;
+    z-index: 900;
+    top: 200px;
+    left: 5px;
+    background-color: rgba(41, 41, 41, 0.8);
+    padding: 5px 0;
+    a {
+        display: block;
+        font-size: 40px;
+        color: white;
+        padding: 5px 10px;
+        line-height: 0;
+    }
+    a:hover {
+        color: @rose;
+    }
+}
+
+
+
+/****** section *****/
+
+hr {
+    width: 40px;
+    margin: 0 auto;
+    background-color: @gris;
+    height: 1px;
+}
+#securite {
+    background-image: url(../img/securite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 120px;
+    
+    article {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px 30px;
+        height: 450px;
+        margin: 20px;
+        h3 {
+            .typo (@mont, 18px, @gris);
+            font-weight: 500;
+            padding-bottom: 20px;
+            padding-top: 10px;
+        }
+        p {
+            .typo (@mont, 14px, @gris);
+            line-height: 29px;
+            font-weight: 300;
+            span {
+                color: @rose;
+                font-weight: 400;
+            }
+        }
+        a {
+            .typo (@mont, 16px, @rose);
+            font-weight: 400;
+            position: absolute;
+            right: 80px;
+            bottom: 55px;
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+    #divsecurite {
+        padding-top: 60px;
+    }
+}
+
+#newsletter {
+    padding-bottom: 120px;
+    img {
+        width: 100%;
+    }
+}
+#voyages {
+    padding-bottom: 120px;
+    div {
+        padding: 15px;
+    }
+}
+/******* text *******/
+
+h1 {
+    .typo (@elite, 34px, @gris);
+    position: absolute;
+    right: 0;
+    top: 225px;
+    left: 0;
+    z-index: 800;
+    display: flex;
+    justify-content: center;    
+}
+#calltoaction {
+    .typo (@elite, 26px, white);
+    text-align: center;
+    background-color: rgba(41, 41, 41, 0.8);
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3px 15px 2px 15px;
+    &:hover {
+        color: @rose;
+        border-color: @rose;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+}
+#position {
+    position: absolute;
+right: 0;
+top: 280px;
+left: 0;
+z-index: 800;
+display: flex;
+justify-content: center;
+}
+
+h2 {
+    .typo (@elite, 26px, @gris);
+    text-align: center;
+}
+
+h3 {
+    .typo (@mont, 16px, @gris);
+    padding: 40px 0;
+    font-weight: 300;
+    line-height: 30px;
+        span {
+            color: @rose;
+            font-weight: 400;
+        }
+    }
+#voyage1 {
+    background-image: url(../img/voyage1.jpg);
+    background-repeat: no-repeat;
+}
+#voyage2 {
+    background-image: url(../img/voyage2.jpg);
+    background-repeat: no-repeat;
+}
+#voyage3 {
+    background-image: url(../img/voyage3.jpg);
+    background-repeat: no-repeat;
+}
+#voyage4 {
+    background-image: url(../img/voyage4.jpg);
+    background-repeat: no-repeat;
+}
+#voyage5 {
+    background-image: url(../img/voyage5.jpg);
+    background-repeat: no-repeat;
+}
+#voyage6 {
+    background-image: url(../img/voyage6.jpg);
+    background-repeat: no-repeat;
+}
+#voyage7 {
+    background-image: url(../img/voyage7.jpg);
+    background-repeat: no-repeat;
+}
+#voyage8 {
+    background-image: url(../img/voyage8.jpg);
+    background-repeat: no-repeat;
+}
+#voyage9 {
+    background-image: url(../img/voyage9.jpg);
+    background-repeat: no-repeat;
+}
+#voyage10 {
+    background-image: url(../img/voyage10.jpg);
+    background-repeat: no-repeat;
+}
+#voyage11 {
+    background-image: url(../img/voyage11.jpg);
+    background-repeat: no-repeat;
+}
+#voyage12 {
+    background-image: url(../img/voyage12.jpg);
+    background-repeat: no-repeat;
+}
+
+#voyages {
+    article {
+        padding: 10px;
+        height: 275px;
+        h4, p, a {
+            color: rgba(41, 41, 41, 0);
+            transition: all 0.6s;
+        }
+        h4 {
+            font-family: @mont;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        p {
+            font-family: @mont;
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 300;
+            span {
+                color: @rose;
+                font-weight: 400;
+            }
+        }
+        a {
+            border: 1px solid rgba(41, 41, 41, 0);
+            border-radius: 10px;
+            padding: 2px 8px;
+            position: absolute;
+            right: 32px;
+            bottom: 23px;
+            }
+        &:hover {
+        h4, p, a {
+            color: @gris;
+            border-color: @gris;
+            transition: all 0.6s;
+        }
+            a:hover {
+                color: white;
+                border-color: @rose;
+                transition: all 0s;
+                background-color: @rose;
+            }
+        background-image: none;
+        transition: all 0.6s;
+        }
+    }
+}
+
+#newsletter {
+    h3 {
+        text-align: center;
+    }
+    h4 {
+        .typo (@mont, 14px, @gris);
+        font-weight: 300;
+        text-align: center;
+        padding-top: 20px;
+        span {
+            color: @rose;
+            font-weight: 400;
+        }
+    }
+    label {
+        .typo (@mont, 14px, @gris);
+        font-weight: 200;
+    }
+    form {
+        margin: 0 auto;
+        padding: 25px 0 65px 0;
+        #boutton {
+            border-radius: 10px;
+            border: 1px solid @gris;
+            background-color: white;
+            padding: 0px 12px;
+            height: 35px;
+            margin-top: 29px;
+            margin-left: auto;
+            font-weight: 200;
+            &:hover {
+                background-color: @rose;
+                color: white;
+                border-color: @rose;
+            }
+        }
+        fieldset {
+            margin: 10px;
+            input {
+                border: none;
+                border-bottom: 1px solid @gris;
+                width: 190px;
+            }
+        }
+    }
+    p {
+        .typo (@mont, 14px, @gris);
+        text-align: center;
+        font-weight: 200;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+
+/****** footer *******/
+
+footer {
+    background-color: @gris;
+    padding-top: 10px;
+    li {
+        .typo (@mont, 13px, white);
+        list-style: none;
+        font-weight: 300;
+        line-height: 24px;
+        a {
+            color: white;
+            &:hover {
+                color: @rose;
+            }
+        }
+        span {
+            color: @rose;
+        }
+    }
+    ul {
+        padding: 0 20px;
+    }
+}
+
+footer li:first-child {
+            font-weight: 500;
+            padding-bottom: 5px;
+            font-size: 12px;
+        }
+.reseaufooter {
+    padding: 0 3px;
+    display: inline-block;
+    i {
+        font-size: 24px;
+    }
+}
+
+
+
+#ml {
+    .db;
+    margin: 0 auto;
+    width: 150px;
+    .typo (@mont, 13px, white);
+    font-weight: 200;
+}
+
+#logofooter {
+    .typo (@elite, 16px, white);
+}
+
+/****** contact *******/
+#contact {
+    padding-top: 170px;
+    padding-bottom: 70px;
+    p {
+        .typo (@mont, 15px, @gris);
+        font-weight: 400;
+        text-align: center;
+    }
+    label {
+        .typo (@mont, 14px, @gris);
+        font-weight: 300;
+    }
+    figure {
+        margin: auto;
+    }
+}
+.bordercontact {
+    border: none;
+    border-bottom: 1px solid @gris;
+}
+#contactnom {
+    margin: 28px 0 26px auto;
+    fieldset {
+        margin: 0 90px 10px 0;
+    }
+}
+#contacttext {
+        margin: 30px 0;
+}
+#envoyer {
+            border-radius: 10px;
+            border: 1px solid @gris;
+            background-color: white;
+            padding: 5px 12px;
+            &:hover {
+                background-color: @rose;
+                color: white;
+                border-color: @rose;
+            }
+}
+#text {
+    height: 200px;
+    width: 510px;
+    padding: 5px;
+}
+/******* media queries ******/
+
+@media (max-width:1200px) {
+    #drapeaux a {
+        padding: 1px 3px !important;
+        }
+    #securite {
+        h3 {
+        font-size: 16px !important;
+        }
+        article {
+        height: 535px;
+        }
+    }
+    #voyages {
+        article {
+            background-image: none;
+            height: auto;
+            h4, p, a {
+            color: @gris;
+            border-color: @gris;
+                bottom: 2px;
+        }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    #icon {
+        display: none;
+    }
+    #drapeaux {
+        margin-left: 0 !important;
+        }
+    #logo {
+        font-size: 25px !important;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #calltoaction {
+        font-size: 16px;
+    }
+    #voyages {
+        .tiret {
+            border-bottom: 1px solid @gris;
+        }
+    }
+    
+    #securite {
+        article {
+        height: auto;
+            a {
+                bottom: 30px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width:405px){
+    #logo {
+        font-size: 18px !important;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    #securite {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    #newsletter {
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+
+
